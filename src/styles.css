@@ -1,0 +1,85 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --text-color: #3bba9c;
+  --secondary-color: #3c3f58;
+  --white-color: #fff;
+}
+
+body {
+  background: #2e3047;
+  color: var(--text-color);
+}
+
+/* Utility Classes */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--white-color);
+}
+
+.quote {
+  background: var(--secondary-color);
+  padding: 1rem;
+  border-left: 5px solid var(--white-color);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+}
+
+.left-align {
+  text-align: right;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--secondary-color);
+  border: none;
+  padding: 1rem;
+  color: var(--text-color);
+  margin: 1rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+  color: #fff;
+  transform: scale(1.2);
+}
+
+img {
+  width: 10rem;
+}
+
+.movieDiv {
+  max-width: 350px;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.movieDiv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
